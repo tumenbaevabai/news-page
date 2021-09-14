@@ -1,0 +1,21 @@
+.header {
+    background: #C4C4C4;
+    padding: 40px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: black;
+}
+
+.nav__link:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav__link {
+    color: black;
+}
