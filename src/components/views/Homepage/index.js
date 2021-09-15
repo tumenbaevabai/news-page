@@ -1,11 +1,8 @@
-import Layout from "../../Layout";
-
-
 const Homepage = () => {
   return (
-      <Layout >
+      <div >
           Homepage
-      </Layout>
+      </div>
   )
 }
 

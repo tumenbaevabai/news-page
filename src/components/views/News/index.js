@@ -1,25 +1,29 @@
-import Layout from "../../Layout";
+import {Link} from "react-router-dom";
+import Spinner from "../../Spinner";
+
+const News = ({news, loading}) => {
 
 
-const News = (news) => {
-
+    if (loading) {
+        return <Spinner />
+    }
     return (
-        <Layout >
-            <div className="row">
-                {
-                    news.map(item => (
-                        <div className="col-3" key={item.id}>
+        <div className="row">
+            {
+                news.map(item => (
+                    <div className="col-3" key={item.id}>
+                        <Link key={item.id} to={`/news/${item.id}`}>
                             <div className="news__box">
                                 <div className="news__img">
                                     <img src={item.image} alt=""/>
                                 </div>
                                 <h3 className="news__title">{item.title}</h3>
                             </div>
-                        </div>
-                    ))
-                }
-            </div>
-        </Layout>
+                        </Link>
+                    </div>
+                ))
+            }
+        </div>
     )
 }
 

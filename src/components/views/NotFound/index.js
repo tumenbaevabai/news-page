@@ -1,10 +1,8 @@
-import Layout from "../Layout";
-
 const NotFound = () => {
     return (
-        <Layout>
+        <div>
             Страница не найдена
-        </Layout>
+        </div>
     )
 }
 

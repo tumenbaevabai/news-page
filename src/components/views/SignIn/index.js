@@ -1,11 +1,8 @@
-import Layout from "../../Layout";
-
-
 const SignIn = () => {
     return (
-        <Layout >
+        <div>
             SignIn
-        </Layout>
+        </div>
     )
 }
 
