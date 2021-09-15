@@ -44,7 +44,7 @@ const NewsPage = ({loading}) => {
                         <p className="news__comments__message">Ну хоть что-то доброе!</p>
                     </div>
                 </div>
-                <textarea className="news__comments__textarea" rows="5" placeholder="Комментарий..."></textarea>
+                <textarea className="news__comments__textarea" rows="6" placeholder="Комментарий..."></textarea>
                 <button className="news__comments__btn">Отправить</button>
             </div>
         </div>
