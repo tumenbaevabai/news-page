@@ -64,6 +64,12 @@ img {
 
 .main {
     flex: 1;
+    background: url("https://images.unsplash.com/photo-1631031651060-424d82e511de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80") no-repeat center/cover;
+}
+
+.hero {
+    height: 100%;
+    margin: -40px 0;
 }
 
 .news__box {

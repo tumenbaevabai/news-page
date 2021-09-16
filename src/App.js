@@ -7,6 +7,7 @@ import NewsPage from "./components/views/NewsPage";
 import axios from "axios";
 import {useState, useEffect} from "react";
 import Layout from "./components/Layout";
+import Request from "./components/views/Request";
 
 function App() {
 
@@ -26,10 +27,13 @@ function App() {
       <Switch>
           <Layout>
               <Route exact path="/" ><Homepage /></Route>
-              <Route exact path="/news" ><News news={news} loading={isLoading} /></Route>
-              <Route path="/news/:id" ><NewsPage loading={isLoading} /></Route>
-              <Route path="/signin" ><SignIn /></Route>
-              <Route path="/signup" ><Index /></Route>
+              <div className="container">
+                  <Route path="/request"><Request /></Route>
+                  <Route exact path="/news" ><News news={news} loading={isLoading} /></Route>
+                  <Route path="/news/:id" ><NewsPage loading={isLoading} /></Route>
+                  <Route path="/signin" ><SignIn /></Route>
+                  <Route path="/signup" ><Index /></Route>
+              </div>
           </Layout>
       </Switch>
     </Router>
