@@ -20,9 +20,8 @@ const Request = () => {
     }
     return (
         <div className="box">
-            <table>
-                <caption>Заявки</caption>
-                <tr>
+            <table className="table">
+                    <tr>
                     <th>ID</th>
                     <th>Имя</th>
                     <th>Телефон</th>

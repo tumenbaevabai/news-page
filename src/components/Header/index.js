@@ -30,10 +30,11 @@ const Header = () => {
             <div className="container">
                 <div className="header__wrapper">
                     <Link to="/" className="logo">Your Logo</Link>
-                    <nav className="nav">
+                    <nav className="nav ">
                         <NavLink exact to="/" className="nav__link">Главная</NavLink>
                         <NavLink to="/request" className="nav__link">Заявки</NavLink>
                         <NavLink to="/news" className="nav__link">Новости</NavLink>
+                        <NavLink to="/students" className="nav__link">Студенты</NavLink>
                         <NavLink to="/signin" className="nav__link">Войти</NavLink>
                         <NavLink to="/signup" className="nav__link">Регистрация</NavLink>
                         <button className="btn__sent" onClick={() => setIsOpen(true)}>Отправить заявку</button>
